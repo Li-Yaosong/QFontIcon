@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     {
         for (int y=0;y<10; y++)
         {
-            QPushButton * button = new QPushButton(QFontIcon::icon(code),QString::number(code));
+            QPushButton * button = new QPushButton(QFontIcon::icon(QChar(code)),QString::number(code));
             iconsLayout->addWidget(button,x,y);
 
             if (y == 5)
